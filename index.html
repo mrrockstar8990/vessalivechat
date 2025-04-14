@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vessa Live Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container"> <!-- ✅ Wrapper start -->
+
+    <!-- ✅ HEADER -->
+    <div class="chat-header">
+      <img src="Round-Logo.png" alt="Vessa Logo" class="logo">
+      <div>
+        <h1>VESSA</h1>
+        <p>AI ASSISTANT</p>
+      </div>
+    </div>
+
+    <!-- ✅ CHAT BOX -->
+    <div id="chat-box" class="chat-box">
+      <div class="bot-message">Hi there! I’m Vessa AI Assistant. How can I help you today?</div>
+    </div>
+
+    <!-- ✅ INPUT FIELD -->
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message here" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+  </div> <!-- ✅ Wrapper end -->
+
+  <script src="script.js"></script>
+</body>
+</html>
