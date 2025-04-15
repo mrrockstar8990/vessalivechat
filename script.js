@@ -21,7 +21,7 @@ async function sendMessage() {
   chatBox.scrollTop = chatBox.scrollHeight;
 
   try {
-    const response = await fetch("https://livechat-production-1092.up.railway.app/ask", {
+    const response = await fetch("https://vessalivechat-production.up.railway.app/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message }),
