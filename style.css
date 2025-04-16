@@ -22,6 +22,7 @@ body {
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
 }
 
+/* ✅ Header wrapper */
 .chat-header {
   padding: 15px;
   background: #111;
@@ -29,17 +30,29 @@ body {
   border-bottom: 1px solid #222;
 }
 
-.header-inner {
+/* ✅ Vessa logo on top */
+.header-top {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+/* ✅ NAOMI title + Trustpilot button side by side */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* ✅ Vessa Logo image */
 .vessa-logo {
   width: 100px;
   margin-bottom: 6px;
 }
 
+/* ✅ Glowing NAOMI AI title */
 .glow-naomi {
   font-size: 26px;
   color: white;
@@ -48,6 +61,7 @@ body {
   padding-top: 5px;
 }
 
+/* ✅ Description text under header */
 .chat-header p {
   font-size: 13px;
   color: #aaa;
@@ -55,6 +69,36 @@ body {
   line-height: 1.4;
 }
 
+/* ✅ Custom Trustpilot icon-only button */
+.trustpilot-icon-btn {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  height: auto;
+  width: auto;
+  line-height: 0;
+}
+
+.trustpilot-icon {
+  height: 28px;
+  width: auto;
+  display: block;
+  border: 1px solid #00b67a;
+  border-radius: 5px;
+  padding: 3px 6px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.trustpilot-icon:hover {
+  background-color: #00b67a;
+  filter: brightness(110%);
+}
+
+
+
+/* ✅ Chat box area */
 .chat-box {
   flex: 1;
   padding: 15px;
@@ -62,6 +106,7 @@ body {
   color: white;
 }
 
+/* ✅ Input row */
 .chat-input {
   display: flex;
   padding: 15px;
@@ -89,7 +134,9 @@ body {
   cursor: pointer;
 }
 
-.user-message, .bot-message {
+/* ✅ Bubble style */
+.user-message,
+.bot-message {
   margin-bottom: 10px;
   padding: 12px 14px;
   border-radius: 12px;

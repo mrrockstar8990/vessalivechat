@@ -7,15 +7,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="chat-container"> <!-- ✅ Wrapper start -->
+  <div class="chat-container">
 
     <!-- ✅ HEADER -->
     <div class="chat-header">
-      <div class="header-inner">
+      <div class="header-top">
         <img src="Small-Font-With-Logo-White.png" alt="Vessa Logo" class="vessa-logo">
-        <h1 class="glow-naomi">NAOMI AI</h1>
-        <p>This assistant is powered by the VESSA AI engine — combining real-time signal, sentiment and AI logic.</p>
       </div>
+
+      <div class="header-row">
+        <h1 class="glow-naomi">NAOMI AI</h1>
+
+        <!-- ✅ Custom Trustpilot Logo -->
+        <a href="https://www.trustpilot.com/review/vessapro.com" target="_blank" rel="noopener" class="trustpilot-icon-btn">
+          <img src="trustpilot-logo.png" alt="Trustpilot" class="trustpilot-icon" />
+        </a>
+      </div>
+
+      <p>This assistant is powered by the VESSA AI engine — combining real-time signal, sentiment and AI logic.</p>
     </div>
 
     <!-- ✅ CHAT BOX -->
@@ -29,7 +38,7 @@
       <button onclick="sendMessage()">Send</button>
     </div>
 
-  </div> <!-- ✅ Wrapper end -->
+  </div>
 
   <script src="script.js"></script>
 </body>
