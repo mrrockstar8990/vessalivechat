@@ -55,11 +55,17 @@ body {
 /* ✅ Glowing NAOMI AI title */
 .glow-naomi {
   font-size: 26px;
-  color: white;
-  text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
+  color: white; /* ✅ Keep the font white */
+  text-shadow:
+    0 0 5px #00ff99,
+    0 0 10px #00ff99,
+    0 0 20px #00ff99,
+    0 0 30px #00ff99;
   margin: 0;
   padding-top: 5px;
 }
+
+
 
 /* ✅ Description text under header */
 .chat-header p {
